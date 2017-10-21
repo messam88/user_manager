@@ -1,4 +1,5 @@
-#User Manager
+
+# User Manager
 
 demo application for user manager using admin area and simple restfull apis.
 
@@ -13,14 +14,14 @@ demo application for user manager using admin area and simple restfull apis.
     6 - from browser go to user_manager_url web/app_dev.php
 
 
-####Database
+#### Database
 
     excute  /user_manager/docs/user_manager_data_base.sql with a test admin username: test & password: testtest.
     OR
     from browser go to user_manager_url/register to create new admin.
 
 
-####API
+#### API
 
     check /user_manager/docs/api.txt for full api map.
     to test and try all apis from browser go to user_manager_url web/app_dev.php then click on API whci will redirect to /api/doc.
