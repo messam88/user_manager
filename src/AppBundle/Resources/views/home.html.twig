@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <meta name="description" content="">
+        <meta name="author" content="">
+        {#<link rel="icon" href="../../favicon.ico">#}
+        <title>User Manager</title>
+        <link href="{{ asset('bundles/app/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/app/cover.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand"></h3>
+                            <nav>
+                                <ul class="nav masthead-nav">
+                                    <li class=""><a href="{{ path('homepage') }}">Home</a></li>
+                                    <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
+                                    {#<li><a href="{{ path('fos_user_registration_register') }}">Register</a></li>#}
+                                    <li><a href="api/doc">Api</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="inner cover">
+                        <h1 class="cover-heading">Use Manager Demo</h1>
+                        <p class="lead"></p>
+                        <p class="lead"></p>
+                    </div>
+                    <div class="mastfoot">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

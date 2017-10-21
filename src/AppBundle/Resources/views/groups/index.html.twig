@@ -1,0 +1,30 @@
+{% extends 'AppBundle::base.html.twig' %}
+{% block title %}groups list{% endblock %}
+{% block content %}
+    <h1>Groups list</h1>
+    <div>
+        <a href="{{ path('groups_new') }}">Create a new group</a>
+    </div>  
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for group in groups %}
+                <tr>
+                    <td><a href="{{ path('groups_show', { 'id': group.id }) }}">{{ group.id }}</a></td>
+                    <td>{{ group.name }}</td>
+                    <td>
+                        <a href="{{ path('groups_show', { 'id': group.id }) }}">show</a>
+                        <a href="{{ path('groups_edit', { 'id': group.id }) }}">edit</a>                               
+                        <a href="{{ path('groups_delete', { 'id': group.id }) }}">delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

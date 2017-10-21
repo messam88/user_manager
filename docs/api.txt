@@ -1,0 +1,18 @@
+URL                         HTTP Method  Operation
+
+/api/users                 	GET          Returns an array of users
+/api/users/:id            	GET          Returns the user information with id of :id
+/api/users                 	POST         Adds a new user 
+/api/users/:id             	POST         Updates the user with id of :id
+/api/users/:id             	DELETE       Deletes the user with id of :id
+
+/api/groups                 GET          Returns an array of groups
+/api/groups/:id            	GET          Returns the group information with id of :id
+/api/groups                 POST         Adds a new group 
+/api/groups/:id             POST         Updates the group with id of :id
+/api/groups/:id             DELETE       Deletes the group with id of :id
+
+/api/groups/:id/users       GET          Returns the users for the group with id of :id
+/api/groups/:id/users/:nid  POST         Adds the user with id of :nid for the group with id of :id
+/api/groups/:id/users/:uid  DELETE       Deletes the user with id of :nid from the group with id of :id
+

@@ -1,0 +1,25 @@
+{% extends 'AppBundle::base.html.twig' %}
+{% block title %}edit user{% endblock %}
+{% block content %}
+    <h1>edit user info</h1>
+    {{ form_start(edit_form, {'attr' : {'class' : 'form-horizontal'} }) }}
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label">User name</label>
+        <div class="col-sm-10">
+            {{ form_widget(edit_form.name, {'attr' : {'class' : 'form-control', 'placeholder':''} } ) }}   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label">User group</label>
+        <div class="col-sm-10">
+            {{ form_widget(edit_form.group, {'attr' : {'class' : 'form-control', 'placeholder':''} } ) }} 
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <a href="{{ path('user_index') }}">Cancel</a>
+            <button type="submit" class="btn btn-default">Save</button>  
+        </div>
+    </div>
+    {{ form_end(edit_form) }}
+{% endblock %}

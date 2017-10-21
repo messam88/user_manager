@@ -1,0 +1,16 @@
+{% extends 'AppBundle::base.html.twig' %}
+{% block title %}groups list{% endblock %}
+{% block content %}
+    <h1>Group</h1>
+    <div>{{ group.id }}</div>
+    <div>{{ group.name }}</div>
+    <div>
+        <ul>
+            {% for user in group.users  %}
+                <li> {{ user }} </li>
+                {% endfor %}        
+        </ul>
+    </div>
+    <a href="{{ path('groups_index') }}">Back to the list</a>
+    <a href="{{ path('groups_edit', { 'id': group.id }) }}">Edit</a>
+{% endblock %}
